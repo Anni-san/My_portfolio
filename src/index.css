@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Developer Portfolio Design System */
+@layer base {
+  :root {
+    /* Base Colors */
+    --background: 220 20% 98%;
+    --foreground: 220 13% 13%;
+
+    /* Card Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 13%;
+
+    /* Interactive Elements */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 13%;
+
+    /* Brand Colors - Modern Blue Gradient Theme */
+    --primary: 217 89% 61%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 217 89% 71%;
+    
+    /* Secondary Brand */
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 13% 13%;
+
+    /* Muted Elements */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    /* Accent Colors */
+    --accent: 259 89% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Status Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    /* UI Elements */
+    --border: 220 14% 91%;
+    --input: 220 14% 91%;
+    --ring: 217 89% 61%;
+
+    /* Custom Design Tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.3);
+    --shadow-card: 0 4px 20px hsl(220 13% 13% / 0.1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Base Dark Colors */
+    --background: 220 27% 8%;
+    --foreground: 220 14% 96%;
+
+    /* Card Dark Colors */
+    --card: 220 23% 11%;
+    --card-foreground: 220 14% 96%;
+
+    /* Interactive Elements Dark */
+    --popover: 220 23% 11%;
+    --popover-foreground: 220 14% 96%;
+
+    /* Brand Colors Dark */
+    --primary: 217 89% 70%;
+    --primary-foreground: 220 27% 8%;
+    --primary-glow: 217 89% 80%;
+
+    /* Secondary Dark */
+    --secondary: 220 20% 14%;
+    --secondary-foreground: 220 14% 96%;
+
+    /* Muted Dark */
+    --muted: 220 20% 14%;
+    --muted-foreground: 220 9% 65%;
+
+    /* Accent Dark */
+    --accent: 259 89% 70%;
+    --accent-foreground: 220 27% 8%;
+
+    /* Status Dark */
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 220 27% 8%;
+    --success: 142 76% 45%;
+    --success-foreground: 220 27% 8%;
+
+    /* UI Dark */
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 217 89% 70%;
+
+    /* Custom Dark Tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.4);
+    --shadow-card: 0 4px 20px hsl(220 27% 8% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Portfolio Component Styles */
+@layer components {
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .card-glow {
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-smooth);
+  }
+  
+  .card-glow:hover {
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-2px);
+  }
+
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+}
+
+/* Custom Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  from { filter: drop-shadow(0 0 20px hsl(var(--primary) / 0.3)); }
+  to { filter: drop-shadow(0 0 30px hsl(var(--primary) / 0.6)); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.6s ease-out forwards;
+}

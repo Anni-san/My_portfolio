@@ -1,0 +1,16 @@
+/* RESET ROOT – DO NOT CONSTRAIN LAYOUT */
+#root {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+
+/* Optional: smoother fonts */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #0a0f1a;
+}
