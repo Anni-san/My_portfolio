@@ -38,14 +38,14 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-muted/50 border-t border-border">
+    <footer className="section-bg border-t border-white/5">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-gradient">Animesh Verma</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Full-Stack Developer passionate about creating beautiful, 
+              Full-Stack Developer passionate about creating beautiful,
               functional web applications that make a difference.
             </p>
             <div className="flex space-x-2">
@@ -99,7 +99,7 @@ export function Footer() {
         {/* Bottom Section */}
         <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground flex items-center gap-1">
-            © {currentYear} Animesh Verma. Made with <Heart className="h-4 w-4 text-red-500" /> 
+            © {currentYear} Animesh Verma. Made with <Heart className="h-4 w-4 text-red-500" />
             using React & Tailwind CSS.
           </p>
           <div className="flex space-x-4 text-sm text-muted-foreground mt-4 md:mt-0">

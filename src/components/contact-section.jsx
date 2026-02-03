@@ -60,7 +60,7 @@ export function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="section-bg-alt">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">
@@ -77,7 +77,7 @@ export function ContactSection() {
             <div>
               <h3 className="text-2xl font-bold mb-4">Let's Connect</h3>
               <p className="text-muted-foreground mb-6">
-                I'm always open to discussing new opportunities, interesting projects, 
+                I'm always open to discussing new opportunities, interesting projects,
                 or just having a chat about technology and development.
               </p>
             </div>

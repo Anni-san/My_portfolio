@@ -1,13 +1,13 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { 
-  Code2, 
-  Database, 
-  Palette, 
-  Server, 
-  Smartphone, 
-  Globe 
+import {
+  Code2,
+  Database,
+  Palette,
+  Server,
+  Smartphone,
+  Globe
 } from "lucide-react";
 
 export function SkillsSection() {
@@ -20,7 +20,7 @@ export function SkillsSection() {
     },
     {
       icon: Server,
-      title: "Backend Development", 
+      title: "Backend Development",
       skills: ["Node.js", "Express.js", "Java (Spring Boot - learning)"],
       color: "bg-green-500",
     },
@@ -60,7 +60,7 @@ export function SkillsSection() {
   ];
 
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="section-bg-alt">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">

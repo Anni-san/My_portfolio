@@ -34,11 +34,10 @@ export function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/80 backdrop-blur-md border-b border-border shadow-sm"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
+          ? "bg-[#020617]/80 backdrop-blur-xl border-b border-white/10 py-3 shadow-2xl"
+          : "bg-transparent py-5"
+        }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
@@ -46,9 +45,10 @@ export function Navigation() {
           <div className="flex-shrink-0">
             <button
               onClick={() => scrollToSection("#home")}
-              className="text-xl font-bold text-gradient hover:scale-105 transition-transform"
+              className="text-2xl font-black tracking-tighter hover:scale-105 transition-transform flex items-center gap-2"
             >
-              My Portfolio
+              <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">AV</span>
+              <span className="text-white">PORTFOLIO</span>
             </button>
           </div>
 
@@ -59,10 +59,10 @@ export function Navigation() {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-foreground hover:text-primary transition-colors relative group py-2"
+                  className="text-gray-400 hover:text-white transition-colors relative group py-2 text-sm font-semibold tracking-wide uppercase"
                 >
                   {item.name}
-                  <span className="absolute left-0 bottom-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+                  <span className="absolute left-0 bottom-0 w-full h-0.5 bg-cyan-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
                 </button>
               ))}
             </div>
@@ -71,7 +71,7 @@ export function Navigation() {
           {/* Theme Toggle & Mobile Menu */}
           <div className="flex items-center space-x-2">
             <ThemeToggle />
-            
+
             {/* Mobile menu button */}
             <div className="md:hidden">
               <Button
