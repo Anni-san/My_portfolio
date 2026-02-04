@@ -21,6 +21,7 @@ export function Navigation() {
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
+    { name: "Experience", href: "#experience" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -35,8 +36,8 @@ export function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-          ? "bg-[#020617]/80 backdrop-blur-xl border-b border-white/10 py-3 shadow-2xl"
-          : "bg-transparent py-5"
+        ? "bg-[#020617]/80 backdrop-blur-xl border-b border-white/10 py-3 shadow-2xl"
+        : "bg-transparent py-5"
         }`}
     >
       <div className="container mx-auto px-4">
