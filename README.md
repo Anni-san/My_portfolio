@@ -47,7 +47,6 @@ Example: https://your-portfolio.vercel.app
 ---
 
 ## 📂 Project Structure
-
 My_portfolio/
 ├── src/ # Frontend (React)
 │ ├── components/
@@ -70,7 +69,6 @@ My_portfolio/
 │
 ├── .gitignore
 └── README.md
-
 ---
 
 ## 🚀 Getting Started (Local Setup)
