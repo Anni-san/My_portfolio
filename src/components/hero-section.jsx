@@ -121,6 +121,17 @@ export function HeroSection() {
                 <ArrowRight className="w-5 h-5 relative z-10 transition-transform group-hover:translate-x-1 group-hover:text-white" />
               </button>
 
+              <a
+                href="/src/assets/Animesh_verma_resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group px-8 py-4 border border-white/10 bg-white/5 backdrop-blur-sm rounded-xl font-bold flex items-center gap-2 hover:bg-white/10 transition-all hover:border-white/20"
+                aria-label="View Resume"
+              >
+                <Download className="w-5 h-5 text-gray-400 group-hover:text-cyan-400 transition-colors" />
+                <span>Resume</span>
+              </a>
+
               <button
                 onClick={() => scrollToSection("contact")}
                 className="group px-8 py-4 border border-white/10 bg-white/5 backdrop-blur-sm rounded-xl font-bold flex items-center gap-2 hover:bg-white/10 transition-all hover:border-white/20"

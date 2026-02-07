@@ -14,8 +14,8 @@ app.set('trust proxy', 1);
 
 // CORS configuration
 const corsOptions = {
-  origin: process.env.NODE_ENV === 'production' 
-    ? ['https://yourdomain.com', 'https://www.yourdomain.com'] 
+  origin: process.env.NODE_ENV === 'production'
+    ? [process.env.FRONTEND_URL, 'https://animesh-verma-portfolio.vercel.app']
     : true, // Allow all origins in development
   credentials: true,
   optionsSuccessStatus: 200

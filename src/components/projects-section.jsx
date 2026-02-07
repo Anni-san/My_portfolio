@@ -2,12 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
-import ecommerceImage from "@/assets/project-ecommerce.jpg";
-import taskappImage from "@/assets/project-taskapp.jpg";
-import weatherImage from "@/assets/project-weather.jpg";
 import fashionSenseImg from "../assets/fashion-sense.png";
 import detectifyImg from "../assets/Detectify.png";
+import auth_spring from "../assets/auth_spring.png";
 import farmXChainImg from "../assets/FarmXChain.png";
+import portfolio from "../assets/portfolio.png";
+import focus from "../assets/focus.png";
+import nasa2025 from "../assets/nasa2025.png";
+
 
 
 export function ProjectsSection() {
@@ -23,65 +25,100 @@ export function ProjectsSection() {
       featured: true,
     },
     {
-      title: "E-Commerce Platform",
-      description:
-        "A full-featured e-commerce platform with user authentication, payment integration, and admin dashboard. Built with React, Node.js, and MongoDB.",
-      image: detectifyImg,
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
-      liveUrl: "https://demo-ecommerce.com",
-      githubUrl: "https://github.com/alexjohnson/ecommerce-platform",
-      featured: true,
-    },
+    title: "Detectify",
+    description:
+      "An AI-powered verification and fact-checking platform that helps users identify fake news, fraudulent reviews, and suspicious digital content. Built to enhance trust and authenticity in the digital ecosystem.",
+    image: detectifyImg,
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "AI / NLP",
+      "Tailwind CSS",
+    ],
+    liveUrl: "https://github.com/Anni-san/Detectify",
+    githubUrl: "https://github.com/Anni-san/Detectify",
+    featured: true,
+  },
     {
-      title: "Task Management",
+      title: "FashionSense",
       description:
-        "A collaborative task management application with real-time updates, team collaboration, and project tracking features.",
+        "A modern fashion discovery and styling platform that helps users explore trending outfits, discover fashion inspiration, and make smarter style choices. Built with a clean UI and scalable backend architecture.",
       image: fashionSenseImg,
-      technologies: ["React", "TypeScript", "Supabase", "React Query"],
-      liveUrl: "https://demo-taskapp.com",
-      githubUrl: "https://github.com/alexjohnson/task-management",
+      technologies: ["React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",],
+      liveUrl: "https://github.com/Anni-san/Fashion_sense",
+      githubUrl: "https://github.com/Anni-san/Fashion_sense",
       featured: true,
     },
     {
-      title: "NASA Space App 2025 : Meteor Madness",
-      description:
-        "Advanced Asteroid Impact Simulation & Risk Assessment Platform Harness NASA datasets and cutting-edge visualization to model asteroid threats, predict consequences, and develop life-saving mitigation strategies.",
-      image: weatherImage,
-      technologies: ["Vue.js", "Express", "OpenWeather API", "Chart.js"],
-      liveUrl: "https://demo-weather.com",
-      githubUrl: "https://github.com/alexjohnson/weather-dashboard",
-      featured: false,
-    },
+  title: "Full Stack Authentication System",
+  description:
+    "A production-ready authentication system built with Spring Boot and React.js. Implements secure login and signup using JWT access and refresh tokens, role-based authorization, protected APIs, and HttpOnly cookies. Includes token rotation, CSRF protection, CORS configuration, and seamless frontend-backend integration following real-world security best practices.",
+  image: auth_spring, // agar auth-specific image ho to replace kar dena
+  technologies: [
+    "Spring Boot",
+    "Spring Security",
+    "React.js",
+    "JWT",
+    "REST API",
+    "Tailwind CSS",
+  ],
+  liveUrl: "https://demo-auth-app.com", // optional, warna GitHub hi rehne de
+  githubUrl: "https://github.com/Anni-san/spring_auth",
+  featured: true,
+}
+,
+   {
+  title: "NASA Space App 2025 : Meteor Madness",
+  description:
+    "An advanced asteroid impact simulation and risk assessment platform developed for NASA Space Apps Challenge 2025. The project leverages real NASA datasets and interactive visualizations to analyze asteroid trajectories, predict potential impacts, and evaluate mitigation strategies for planetary defense.",
+  image: nasa2025,
+  technologies: [
+    "JavaScript",
+    "Data Visualization",
+    "NASA Open APIs",
+    "Chart.js",
+    "Web Mapping",
+  ],
+  liveUrl: "https://demo-weather.com",
+  githubUrl: "https://github.com/Anni-san/NASA_Space_2025",
+  featured: false,
+},
     {
-      title: "Portfolio Website",
-      description:
-        "A responsive portfolio website showcasing my work and skills with modern animations and smooth user experience.",
-      image: ecommerceImage, // Reusing image for demo
-      technologies: ["React", "Tailwind CSS", "Framer Motion", "TypeScript"],
-      liveUrl: "https://alexjohnson.dev",
-      githubUrl: "https://github.com/alexjohnson/portfolio",
-      featured: false,
-    },
+  title: "Personal Portfolio Website",
+  description:
+    "A fully responsive and modern portfolio website showcasing my projects, skills, and experience. Designed with smooth animations, clean UI, and optimized performance to create a strong personal brand and professional online presence.",
+  image: portfolio,
+  technologies: [
+    "React",
+    "Tailwind CSS",
+    "Framer Motion",
+    "TypeScript",
+  ],
+  liveUrl: "https://alexjohnson.dev",
+  githubUrl: "https://github.com/Anni-san/My_portfolio",
+  featured: false,
+},
     {
-      title: "Chat Application",
-      description:
-        "Real-time chat application with private messaging, group chats, file sharing, and emoji support.",
-      image: taskappImage, // Reusing image for demo
-      technologies: ["React", "Socket.io", "Express", "PostgreSQL"],
-      liveUrl: "https://demo-chat.com",
-      githubUrl: "https://github.com/alexjohnson/chat-app",
-      featured: false,
-    },
-    {
-      title: "Analytics Dashboard",
-      description:
-        "A comprehensive analytics dashboard for tracking website performance, user behavior, and business metrics.",
-      image: weatherImage, // Reusing image for demo
-      technologies: ["Next.js", "D3.js", "Redis", "PostgreSQL"],
-      liveUrl: "https://demo-analytics.com",
-      githubUrl: "https://github.com/alexjohnson/analytics-dashboard",
-      featured: false,
-    },
+  title: "Focus Clock & To-Do List",
+  description:
+    "A productivity-focused web application combining a personalized focus clock with a task management system. Designed to help users stay organized, manage daily tasks, and improve focus using a clean, distraction-free interface.",
+  image: focus,
+  technologies: [
+    "React",
+    "JavaScript",
+    "CSS",
+    "Local Storage",
+  ],
+  liveUrl: "https://personalized-clock.vercel.app/",
+  githubUrl: "https://github.com/Anni-san/Personalized_clock",
+  featured: false,
+},
   ];
 
   return (
