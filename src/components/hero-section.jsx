@@ -6,6 +6,7 @@ const roles = [
   "Full-Stack Developer",
   "Backend-Focused Software Engineer",
   "Problem Solver · DSA & System Design",
+  "Service Now: Admin Certified",
 ];
 
 export function HeroSection() {
@@ -99,7 +100,7 @@ export function HeroSection() {
             {/* STATS - Subtle Glassmorphism */}
             <div className="flex flex-wrap gap-4 pt-2">
               {[
-                { label: "Projects", value: "5+" },
+                { label: "Projects", value: "8+" },
                 { label: "Years", value: "2+" },
                 { label: "Dedication", value: "100%" },
               ].map((stat, i) => (
