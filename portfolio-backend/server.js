@@ -15,8 +15,13 @@ app.set('trust proxy', 1);
 // CORS configuration
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production'
-    ? [process.env.FRONTEND_URL, 'https://animesh-verma-portfolio.vercel.app']
-    : true, // Allow all origins in development
+    ? [
+      process.env.FRONTEND_URL,
+      process.env.FRONTEND_UR, // Handle the typo found in Render
+      'https://my-portfolio-iota-nine-14.vercel.app',
+      'https://my-portfolio-izha.onrender.com'
+    ].filter(Boolean)
+    : true,
   credentials: true,
   optionsSuccessStatus: 200
 };

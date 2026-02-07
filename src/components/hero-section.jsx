@@ -123,7 +123,7 @@ export function HeroSection() {
               </button>
 
               <a
-                href="/src/assets/Animesh_verma_resume.pdf"
+                href="/Animesh_verma_resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group px-8 py-4 border border-white/10 bg-white/5 backdrop-blur-sm rounded-xl font-bold flex items-center gap-2 hover:bg-white/10 transition-all hover:border-white/20"
