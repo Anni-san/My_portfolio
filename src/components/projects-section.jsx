@@ -5,6 +5,10 @@ import { ExternalLink, Github } from "lucide-react";
 import ecommerceImage from "@/assets/project-ecommerce.jpg";
 import taskappImage from "@/assets/project-taskapp.jpg";
 import weatherImage from "@/assets/project-weather.jpg";
+import fashionSenseImg from "../assets/fashion-sense.png";
+import detectifyImg from "../assets/Detectify.png";
+import farmXChainImg from "../assets/FarmXChain.png";
+
 
 export function ProjectsSection() {
   const projects = [
@@ -12,8 +16,7 @@ export function ProjectsSection() {
       title: "FarmXChain",
       description:
         "FarmXChain is a blockchain-inspired agricultural traceability platform connecting farmers, distributors, retailers, and consumers with transparency and efficiency",
-      // Avoid broken external image request (was causing 404): use local project image instead
-      image: ecommerceImage,
+      image: farmXChainImg,
       technologies: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
       liveUrl: "https://greenfarmxchain.netlify.app/dashboard",
       githubUrl: "https://github.com/Anni-san/FarmXChain_Finaldraft",
@@ -23,7 +26,7 @@ export function ProjectsSection() {
       title: "E-Commerce Platform",
       description:
         "A full-featured e-commerce platform with user authentication, payment integration, and admin dashboard. Built with React, Node.js, and MongoDB.",
-      image: ecommerceImage,
+      image: detectifyImg,
       technologies: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
       liveUrl: "https://demo-ecommerce.com",
       githubUrl: "https://github.com/alexjohnson/ecommerce-platform",
@@ -33,7 +36,7 @@ export function ProjectsSection() {
       title: "Task Management",
       description:
         "A collaborative task management application with real-time updates, team collaboration, and project tracking features.",
-      image: taskappImage,
+      image: fashionSenseImg,
       technologies: ["React", "TypeScript", "Supabase", "React Query"],
       liveUrl: "https://demo-taskapp.com",
       githubUrl: "https://github.com/alexjohnson/task-management",
