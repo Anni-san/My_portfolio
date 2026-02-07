@@ -46,7 +46,7 @@ export function Navigation() {
           <div className="flex-shrink-0">
             <button
               onClick={() => scrollToSection("#home")}
-              className="text-2xl font-black tracking-tighter hover:scale-105 transition-transform flex items-center gap-2"
+              className="text-2xl font-black hover:scale-105 transition-transform flex items-center gap-2"
             >
               <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">AV</span>
               <span className="text-white">PORTFOLIO</span>

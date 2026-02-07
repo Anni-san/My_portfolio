@@ -21,8 +21,8 @@ const validateInput = (name, email, subject, message) => {
     errors.push('Subject must be at least 3 characters long');
   }
 
-  if (!message || typeof message !== 'string' || message.trim().length < 10) {
-    errors.push('Message must be at least 10 characters long');
+  if (!message || typeof message !== 'string' || message.trim().length < 5) {
+    errors.push('Message must be at least 5 characters long');
   }
 
   return errors;

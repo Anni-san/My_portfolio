@@ -63,7 +63,7 @@ export function HeroSection() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(15,23,42,0)_0%,rgba(2,6,23,1)_100%)]" />
       </div>
 
-      <div className="container mx-auto px-6 lg:px-12 relative z-10 py-12 lg:py-0">
+      <div className="container mx-auto px-6 lg:px-12 relative z-10 pt-20 pb-12">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* LEFT CONTENT */}

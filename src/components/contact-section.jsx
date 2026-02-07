@@ -47,7 +47,9 @@ export function ContactSection() {
         toast({
           variant: "destructive",
           title: "Failed to send message",
-          description: result.message || (result.errors ? result.errors.join(", ") : "Something went wrong. Please try again later."),
+          description: (result.errors && result.errors.length > 0)
+            ? result.errors.join(", ")
+            : (result.message || "Something went wrong. Please try again later."),
         });
       }
     } catch (error) {
