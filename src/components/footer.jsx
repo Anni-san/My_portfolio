@@ -17,7 +17,7 @@ export function Footer() {
     },
     {
       icon: Mail,
-      href: "mailto:2k23.cs2313852@gmail.com",
+      href: "mailto:aniimesh.verma@gmail.com",
       label: "Email",
     },
   ];
