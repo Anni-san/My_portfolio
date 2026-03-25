@@ -100,8 +100,8 @@ export function HeroSection() {
             {/* STATS - Subtle Glassmorphism */}
             <div className="flex flex-wrap gap-4 pt-2">
               {[
-                { label: "Projects", value: "8+" },
-                { label: "Years", value: "2+" },
+                { label: "Projects", value: "12+" },
+                { label: "Years", value: "2.5+" },
                 { label: "Dedication", value: "100%" },
               ].map((stat, i) => (
                 <div key={i} className="glass-card px-5 py-3 rounded-xl min-w-[120px] group border-white/5 hover:border-cyan-500/20 transition-all">
@@ -123,7 +123,7 @@ export function HeroSection() {
               </button>
 
               <a
-                href="https://drive.google.com/file/d/1NlpDW5d60ne3UOinTTjNzT0kM7bDFIsD/view"
+                href="https://drive.google.com/file/d/1KkIljsO9iYBCrrumOQ9qV31ail4Z79DE/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group px-8 py-4 border border-white/10 bg-white/5 backdrop-blur-sm rounded-xl font-bold flex items-center gap-2 hover:bg-white/10 transition-all hover:border-white/20"
