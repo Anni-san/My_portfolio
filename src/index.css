@@ -87,7 +87,7 @@
 
     /* Brand Colors Dark - More vibrant cyan/blue */
     --primary: 199 89% 50%;
-    --primary-foreground: 222 47% 7%;
+    --primary-foreground: 0 0% 100%;
     --primary-glow: 199 89% 70%;
 
     --secondary: 222 47% 12%;

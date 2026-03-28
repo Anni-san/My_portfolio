@@ -54,13 +54,13 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center relative overflow-hidden bg-[#020617]"
+      className="min-h-screen flex items-center relative overflow-hidden bg-background"
     >
       {/* PREMIUM BACKGROUND - Multi-layered mesh gradient */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-cyan-500/5 blur-[120px]" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-blue-600/5 blur-[120px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(15,23,42,0)_0%,rgba(2,6,23,1)_100%)]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(var(--background),0)_0%,rgba(var(--background),1)_100%)]" />
       </div>
 
       <div className="container mx-auto px-6 lg:px-12 relative z-10 pt-20 pb-12">
@@ -105,8 +105,8 @@ export function HeroSection() {
                 { label: "Dedication", value: "100%" },
               ].map((stat, i) => (
                 <div key={i} className="glass-card px-5 py-3 rounded-xl min-w-[120px] group border-white/5 hover:border-cyan-500/20 transition-all">
-                  <p className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">{stat.value}</p>
-                  <p className="text-gray-500 text-[10px] font-bold uppercase tracking-widest mt-0.5">{stat.label}</p>
+                  <p className="text-2xl font-bold text-foreground group-hover:text-cyan-400 transition-colors">{stat.value}</p>
+                  <p className="text-muted-foreground text-[10px] font-bold uppercase tracking-widest mt-0.5">{stat.label}</p>
                 </div>
               ))}
             </div>
@@ -115,7 +115,7 @@ export function HeroSection() {
             <div className="flex flex-wrap gap-4 pt-4">
               <button
                 onClick={() => scrollToSection("projects")}
-                className="group relative px-8 py-4 bg-white text-black rounded-xl font-bold flex items-center gap-2 overflow-hidden transition-all hover:scale-[1.02] active:scale-95 shadow-xl shadow-cyan-500/10"
+                className="group relative px-8 py-4 bg-foreground text-background rounded-xl font-bold flex items-center gap-2 overflow-hidden transition-all hover:scale-[1.02] active:scale-95 shadow-xl shadow-cyan-500/10"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity" />
                 <span className="relative z-10 group-hover:text-white transition-colors">View Projects</span>
@@ -161,7 +161,7 @@ export function HeroSection() {
                   />
 
                   {/* OVERLAYS */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent opacity-80" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80" />
 
                   {/* SCANLINE EFFECT ON HOVER */}
                   <div className="absolute inset-0 bg-gradient-to-b from-cyan-400/0 via-cyan-400/5 to-cyan-400/0 h-1 top-0 group-hover:animate-scan pointer-events-none" />

@@ -11,23 +11,23 @@ import { useEffect } from "react";
 const Portfolio = () => {
   useEffect(() => {
     // Update document title and meta tags for SEO
-    document.title = "Animesh Verma - Full-Stack Developer Portfolio";
+    document.title = "Animesh Verma";
 
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Animesh Verma -  A Experienced Full-Stack Developer specializing in React, Node.js, and modern web technologies. View my projects and get in touch.');
+      metaDescription.setAttribute('content', 'Portfolio of Animesh Verma – Developer');
     }
 
     // Update Open Graph tags
     const ogTitle = document.querySelector('meta[property="og:title"]');
     if (ogTitle) {
-      ogTitle.setAttribute('content', 'Animesh Verma - Full-Stack Developer Portfolio');
+      ogTitle.setAttribute('content', 'Animesh Verma');
     }
 
     const ogDescription = document.querySelector('meta[property="og:description"]');
     if (ogDescription) {
-      ogDescription.setAttribute('content', 'Experienced Full-Stack Developer crafting beautiful, functional web applications with modern technologies.');
+      ogDescription.setAttribute('content', 'Portfolio of Animesh Verma – Developer');
     }
   }, []);
 

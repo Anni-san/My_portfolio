@@ -38,8 +38,8 @@ export function Footer() {
   };
 
   return (
-    <footer className="section-bg border-t border-white/5">
-      <div className="container mx-auto px-4 py-12">
+    <footer className="section-bg border-t border-border">
+      <div className="container mx-auto px-4 lg:px-12 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
